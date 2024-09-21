@@ -20,7 +20,7 @@ spec:
           image: gouzhan/api-gateway
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
               protocol: TCP
       restartPolicy: Always
 ---
@@ -33,6 +33,6 @@ spec:
   selector:
     app: api-gateway
   ports:
-    - port: 8080
+    - port: 8081
       protocol: TCP
-      targetPort: 8080
+      targetPort: 8081
